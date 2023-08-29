@@ -1,0 +1,344 @@
+.footer {
+  background-image: url(/assets/footer/background-image.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  width: 100%;
+
+  &__content {
+    margin-top: 95px;
+    padding: 0 370px;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* ---------------------------------- Main ---------------------------------- */
+  &__content-main p {
+    margin-left: 2px;
+    width: 213px;
+    color: #757095;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    letter-spacing: -0.32px;
+    margin-bottom: 30px;
+  }
+  &__content-main_links {
+    margin-left: 2px;
+    display: flex;
+  }
+  &__content-main_links img {
+    margin-right: 16px;
+  }
+
+  /* --------------------------------- Company -------------------------------- */
+  &__content-company {
+    margin-top: 21px;
+  }
+
+  &__content-company h2 {
+    color: #181433;
+    font-family: Manrope;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__content-company_container {
+    display: block;
+  }
+  &__content-company_container li {
+    margin-bottom: 18px;
+  }
+  &__content-company_container li a {
+    color: #181433;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+  }
+
+  /* ------------------------------ Destinations ------------------------------ */
+  &__content-destinations {
+    margin-top: 21px;
+  }
+  &__content-destinations h2 {
+    margin-bottom: 24px;
+    color: #181433;
+    font-family: Manrope;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px; /* 114.286% */
+  }
+  &__content-destinations li {
+    margin-bottom: 12px;
+  }
+  &__content-destinations li a {
+    color: #181433;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+  }
+
+  /* ------------------------------- Newsletter ------------------------------- */
+  &__content-newsletter {
+    margin-top: 21px;
+  }
+  &__content-newsletter h2 {
+    margin-bottom: 24px;
+    color: #181433;
+    font-family: Manrope;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  &__content-newsletter_input {
+    display: flex;
+  }
+  &__content-newsletter_input input {
+    border-radius: 10px 0 0 10px;
+    color: #181433;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: -0.32px;
+    padding: 14px;
+    width: 240px;
+    background: #eef;
+    height: 52px;
+  }
+  &__content-newsletter_input button {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: -0.32px;
+
+    width: 149px;
+    height: 52px;
+    border-radius: 0 10px 10px 0;
+    background: #df6951;
+    box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+  }
+  &__content-newsletter p {
+    margin-top: 21px;
+    opacity: 0.5;
+  }
+
+  /* -------------------------------- Copyright ------------------------------- */
+  &__copyright-container {
+    display: flex;
+    justify-content: center;
+  }
+  &__copyright-line {
+    width: 1200px;
+    height: 2px;
+    background: #e5e5ea;
+  }
+  &__copyright p {
+    color: #181433;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: -0.32px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  &__copyright {
+    justify-content: center;
+  }
+}
+
+/* ------------------------------- Adaptive💀 ------------------------------- */
+@media screen and (max-width: 1800px) {
+  .footer__content {
+    margin-top: 70px;
+    padding: 0 250px;
+  }
+  .footer__copyright-line {
+    width: 1300px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .footer__content {
+    margin-top: 50px;
+    padding: 0 200px;
+    display: flex;
+  }
+  .footer__copyright-line {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1430px) {
+  .footer__content {
+    margin-top: 30px;
+    padding: 0 100px;
+    display: flex;
+  }
+  .footer__copyright-line {
+    width: 1230px;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .footer__content {
+    margin-top: 30px;
+    padding: 0 50px;
+  }
+  .footer__copyright-line {
+    width: 1240px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .footer {
+    &__content-newsletter_input input {
+      width: 180px;
+      height: 40px;
+      font-size: 15px;
+    }
+    &__content-newsletter_input button {
+      width: 100px;
+      font-size: 15px;
+      height: 40px;
+    }
+    &__content-newsletter p {
+      width: 280px;
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .footer {
+    &__content {
+      display: block;
+      justify-content: center;
+      &-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          width: 191px;
+        }
+      }
+      &-company {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+          width: 400px;
+          display: flex;
+          justify-content: space-between;
+        }
+        li {
+          text-align: center;
+        }
+      }
+      &-destinations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+          width: 400px;
+          display: flex;
+          justify-content: space-between;
+        }
+        li {
+          text-align: center;
+        }
+      }
+      &-newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &__content-newsletter_input input {
+      width: 300px;
+      height: 50px;
+      font-size: 18px;
+    }
+    &__content-newsletter_input button {
+      width: 150px;
+      font-size: 18px;
+      height: 50px;
+    }
+  }
+  .footer__copyright p {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    &__content {
+      max-width: 380px;
+      margin: 0 auto;
+      padding: 0;
+      display: block;
+      justify-content: center;
+      &-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          width: 191px;
+        }
+      }
+      &-company {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+          width: 300px;
+          display: block;
+        }
+        li {
+          text-align: center;
+        }
+      }
+      &-destinations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+          width: 100%;
+          display: block;
+        }
+        li {
+          text-align: center;
+        }
+      }
+      &-newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &__content-newsletter_input input {
+      width: 150px;
+      height: 40px;
+      font-size: 14px;
+    }
+    &__content-newsletter_input button {
+      width: 100px;
+      font-size: 14px;
+      height: 40px;
+    }
+  }
+  .footer__copyright p {
+    padding-bottom: 20px;
+  }
+}

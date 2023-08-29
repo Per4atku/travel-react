@@ -1,0 +1,146 @@
+.home__fasteasy {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+}
+.home__fasteasy-content {
+  width: 458px;
+  h3 {
+    color: #df6951;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  h1 {
+    color: #181e4b;
+    font-family: Volkhov;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  &_item {
+    margin: 42px 0;
+    display: flex;
+  }
+  &_item-container {
+    margin-left: 21px;
+    h2 {
+      flex: 1;
+      color: #5e6282;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    p {
+      flex: 1;
+      color: #5e6282;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+.home__fasteasy-img {
+  max-width: 700px;
+  margin-right: -200px;
+  margin-left: auto;
+  height: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Adaptive                                  */
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------------- Laptop L(1440) ----------------------------- */
+@media only screen and (max-width: 1440px) {
+  .home__fasteasy {
+    &-content {
+      max-width: 400px;
+      h1 {
+        font-size: 40px;
+      }
+    }
+    &-img {
+      max-width: 600px;
+      margin-right: -100px;
+    }
+  }
+}
+
+/* ------------------------------ Laptop(1024) ------------------------------ */
+@media only screen and (max-width: 1024px) {
+  .home__fasteasy {
+    &-content {
+      min-width: 0px;
+      max-width: 300px;
+      h1 {
+        font-size: 30px;
+      }
+      &_item-container {
+        h2 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    &-img {
+      max-width: 450px;
+      margin-right: -50px;
+    }
+  }
+}
+
+/* ------------------------------- Tablet(768) ------------------------------ */
+@media only screen and (max-width: 768px) {
+  .home__fasteasy {
+    justify-content: center;
+    &-content {
+      min-width: 0px;
+      max-width: 250px;
+      h1 {
+        font-size: 30px;
+      }
+      &_item-container {
+        h2 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    &-img {
+      margin-right: 0px;
+      max-width: 350px;
+    }
+  }
+}
+
+/* ----------------------------- Mobile L(425) ----------------------------- */
+@media only screen and (max-width: 600px) {
+  .home__fasteasy {
+    flex-wrap: wrap;
+    &-content {
+      max-width: 400px;
+      h1 {
+        font-size: 35px;
+      }
+      &_item-container {
+        h2 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 16px;
+          line-height: normal;
+          width: 100%;
+        }
+      }
+    }
+
+    &-img {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.slick-slider {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  img {
+    margin: 0 auto;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 6px solid #fff;
+    box-shadow: 6px 14px 27px 0px rgba(0, 0, 0, 0.15), -4px 11px 18px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-bottom: 5px;
+  }
+  p {
+    margin: 0 auto;
+    max-width: 392px;
+
+    color: #000;
+    font-family: Poppins;
+    font-size: 12.224px;
+    font-weight: 400;
+    line-height: 24.449px; /* 200% */
+    letter-spacing: 0.611px;
+  }
+  h4 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12.224px;
+    font-weight: 700;
+    line-height: 24.449px; /* 200% */
+    letter-spacing: 0.611px;
+  }
+}
+.slide {
+  max-width: 540px;
+}
+.slick-arrow {
+  margin-top: 40px;
+  z-index: 10;
+  &::before {
+    display: none !important;
+  }
+  width: 62px !important;
+  height: 62px !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important ;
+  background-position: center !important;
+  color: #404040 !important;
+}
+.slick-prev {
+  background-image: url('/assets/home/button-prev.png') !important;
+}
+.slick-next {
+  background-image: url('/assets/home/button-next.png') !important;
+}
+
+.slick-dots {
+  li {
+    width: 30px !important;
+    button::before {
+      content: '' !important;
+      width: 30px !important;
+      height: 3px !important;
+      background-color: #c2c2c2 !important;
+    }
+    button:hover button::before {
+      background-color: red !important;
+    }
+  }
+  .slick-active {
+    button::before {
+      background-color: #df6951 !important;
+    }
+  }
+}
+
+/* ------------------------------- Tablet(768) ------------------------------ */
+@media only screen and (max-width: 768px) {
+  .slick-prev {
+    left: 0 !important;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
+}
+/* ---------------------------------- (605) --------------------------------- */
+@media only screen and (max-width: 605px) {
+  .slide {
+    max-width: 350px !important;
+  }
+  .slick-slider {
+    max-width: 500px;
+  }
+}
+
+/* ---------------------------------- (450) --------------------------------- */
+@media only screen and (max-width: 450px) {
+  .slick-arrow {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .slide {
+    max-width: 300px !important;
+  }
+  .slick-slider {
+    max-width: 400px;
+    p {
+      max-width: 300px;
+    }
+  }
+}
+/* ---------------------------------- (375) --------------------------------- */
+@media only screen and (max-width: 375px) {
+  .slick-slider {
+    max-width: 320px;
+  }
+  .slide {
+    max-width: 250px !important;
+  }
+}

@@ -1,0 +1,26 @@
+.__wrap {
+  padding: 0 auto;
+  margin: 0 14%;
+  padding-top: 30px;
+}
+/* ----------------------------- Laptop L (1440) ---------------------------- */
+@media screen and (max-width: 1440px) {
+  .__wrap {
+    margin: 0 10%;
+    padding-top: 25px;
+  }
+}
+/* ------------------------------ Laptop (1024) ----------------------------- */
+@media screen and (max-width: 1024px) {
+  .__wrap {
+    margin: 0 8%;
+    padding-top: 15px;
+  }
+}
+/* ------------------------------ Tablet (768) ------------------------------ */
+@media screen and (max-width: 768px) {
+  .__wrap {
+    margin: 0 5%;
+    padding-top: 10px;
+  }
+}

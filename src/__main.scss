@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Circular Std;
+  src: url(./assets/fonts/CircularStd-Medium.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Golos+Text:wght@400;500;600;700&family=Inter:wght@700&family=Manrope:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Golos+Text:wght@400;500;600;700&family=Inter:wght@700&family=Manrope:wght@500&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Golos+Text:wght@400;500;600;700&family=Inter:wght@700&family=Manrope:wght@500&family=Poppins:wght@200;300;400;500;600;700&family=Volkhov:wght@400;700&display=swap');
+
+/* -------------------------------------------------------------------------- */
+/*                                 Animations                                 */
+/* -------------------------------------------------------------------------- */
+
+/* ---------------------------- Animations Class ---------------------------- */
+.slide-left {
+  -webkit-animation: slide-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* -------------------------- Animations KeyFrames -------------------------- */
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+}

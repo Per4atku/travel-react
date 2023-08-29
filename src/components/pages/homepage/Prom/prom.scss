@@ -1,0 +1,235 @@
+.home__prom {
+  margin-top: 170px;
+}
+
+.home__prom-text {
+  max-width: 640px;
+
+  h2 {
+    color: #df6951;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin-top: 2px;
+
+    color: #181e4b;
+    font-family: Volkhov;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71.042px; /* 142.085% */
+  }
+  p {
+    margin-top: 20px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  button {
+    margin-top: 30px;
+
+    display: flex;
+    width: 176.561px;
+    height: 56.416px;
+    // padding: 0px 36.566px 9.403px 0px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background: #df6951;
+    box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16.716px;
+    font-weight: 600;
+
+    transition: 0.2s ease-in-out;
+    &:hover {
+      padding: 0px 36.566px 9.403px 0px;
+    }
+  }
+}
+.home__prom-cards {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1092px;
+}
+.home__prom-card {
+  padding: 5px;
+  position: relative;
+  background-color: #000;
+  width: 231px;
+  height: 237px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 40px 10px 10px 0;
+
+  &_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    transition: opacity 0.3s ease-in-out;
+  }
+  &_price {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+
+    transition: 0.3s ease-in-out;
+    h3 {
+      padding: 6px 20px;
+      margin: 15px;
+
+      border-radius: 46px;
+      background: linear-gradient(136deg, #ff7255 0%, #ba4e38 100%);
+
+      color: #fff;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  p {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 12.224px;
+    font-weight: 400;
+    user-select: none;
+
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  h2 {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    user-select: none;
+
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  h2,
+  p,
+  &_price {
+    z-index: 2;
+  }
+  &:hover &_background {
+    opacity: 0.6;
+  }
+  &:hover p {
+    opacity: 1;
+  }
+  &:hover h2 {
+    opacity: 1;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Adaptive                                  */
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------------- Laptop L (1440) ---------------------------- */
+@media only screen and (max-width: 1440px) {
+  .home__prom-cards {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ------------------------------- Tablet(768) ------------------------------ */
+@media only screen and (max-width: 768px) {
+  .home__prom-text {
+    h1 {
+      font-size: 40px;
+      max-width: 400px;
+      line-height: normal;
+    }
+  }
+}
+/* ------------------------------ Mobile L(425) ----------------------------- */
+@media only screen and (max-width: 425px) {
+  .home__prom-text {
+    h1 {
+      font-size: 30px;
+      max-width: 300px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+/* ---------------------------------- (550) --------------------------------- */
+@media only screen and (max-width: 550px) {
+  .home__prom-card {
+    width: 184px;
+    height: 190px;
+    &_price h3 {
+      margin: 5px;
+      padding: 3px 10px;
+      font-size: 13px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 13px;
+    }
+  }
+}
+@media only screen and (max-width: 440px) {
+  .home__prom-card {
+    width: 162px;
+    height: 166px;
+    h2 {
+      font-size: 13px;
+    }
+    p {
+      font-size: 8px;
+      font-weight: 300;
+      line-height: 11px;
+    }
+  }
+}
+
+@media only screen and (max-width: 384px) {
+  .home__prom-card {
+    width: 136px;
+    height: 140px;
+    margin: 20px 5px 5px 0;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 6px;
+    line-height: 9px;
+  }
+}

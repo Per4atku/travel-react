@@ -1,0 +1,182 @@
+.home__honeymoon {
+  margin-top: 128px;
+  display: flex;
+  img {
+    // 776x803
+    margin-left: -216px; //28%
+    flex-shrink: 0;
+  }
+}
+.home__honeymoon-content {
+  margin-top: 172px;
+  margin-left: 122px;
+  h2 {
+    color: #df6951;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+  h1 {
+    color: #181e4b;
+    font-family: Volkhov;
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 583px;
+  }
+  p {
+    margin-top: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 583px;
+  }
+  button {
+    margin-top: 31px;
+    border-radius: 10px;
+    background: #df6951;
+    box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+    display: flex;
+    width: 176.561px;
+    height: 56.416px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16.716px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      padding: 0px 36.566px 9.403px 0px;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Adaptive                                  */
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------------- Laptop L(1440) ----------------------------- */
+@media screen and (max-width: 1440px) {
+  .home__honeymoon {
+    margin-top: 100px;
+    img {
+      width: 600px;
+      margin-left: -168px;
+    }
+  }
+  .home__honeymoon-content {
+    margin-top: 100px;
+    h2 {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 40px;
+      max-width: 466px;
+    }
+    p {
+      font-size: 13px;
+      max-width: 466px;
+    }
+  }
+}
+
+/* ------------------------------ Laptop (1024) ----------------------------- */
+@media screen and (max-width: 1024px) {
+  .home__honeymoon {
+    margin-top: 70px;
+    img {
+      width: 400px;
+      margin-left: -80px;
+    }
+  }
+  .home__honeymoon-content {
+    margin: auto;
+    h2 {
+      font-size: 11px;
+    }
+    h1 {
+      font-size: 32px;
+      max-width: 372px;
+    }
+    p {
+      font-size: 10px;
+      max-width: 373px;
+    }
+    button {
+      width: 140px;
+      height: 45px;
+      font-size: 12px;
+    }
+  }
+}
+/* ------------------------------ Tablet (768) ------------------------------ */
+@media screen and (max-width: 768px) {
+  .home__honeymoon {
+    img {
+      width: 300px;
+      margin-left: -50px;
+    }
+  }
+  .home__honeymoon-content {
+    margin: auto;
+    h2 {
+      font-size: 9px;
+    }
+    h1 {
+      font-size: 26px;
+      max-width: 298px;
+    }
+    p {
+      font-size: 8px;
+      max-width: 298px;
+    }
+    button {
+      width: 140px;
+      height: 45px;
+      font-size: 12px;
+    }
+  }
+}
+/* ------------------------------ Mobile L(425) ----------------------------- */
+@media screen and (max-width: 425px) {
+  .home__honeymoon {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    img {
+      width: 300px;
+    }
+  }
+  .home__honeymoon-content {
+    margin: 0 auto;
+    h2 {
+      font-size: 9px;
+    }
+    h1 {
+      font-size: 21px;
+      max-width: 300px;
+    }
+    p {
+      line-height: normal;
+      font-size: 12px;
+      max-width: 300px;
+    }
+    button {
+      margin: 10px auto;
+      width: 140px;
+      height: 45px;
+      font-size: 12px;
+    }
+  }
+}

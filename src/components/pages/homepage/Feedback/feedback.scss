@@ -1,0 +1,63 @@
+.home__feedback-bg {
+  margin-top: 100px;
+  background: #f8f8f8;
+  padding: 60px 0;
+}
+
+.home__feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  h2 {
+    color: #df6951;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+  h1 {
+    max-width: 639px;
+    color: #181e4b;
+    text-align: center;
+    font-family: Volkhov;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71.042px;
+  }
+}
+.home__feedback-text {
+  text-align: center;
+}
+
+.swiper-button-next {
+  color: white;
+  background: #000;
+}
+.swiper-button-prev {
+  background: #000;
+}
+
+/* ------------------------------ Laptop (1024) ----------------------------- */
+@media only screen and (max-width: 1024px) {
+  .home__feedback {
+    h1 {
+      margin: 0 auto;
+      font-size: 40px;
+      max-width: 550px;
+      line-height: normal;
+    }
+  }
+}
+/* ------------------------------- Mobile L(425) ------------------------------ */
+@media only screen and (max-width: 425px) {
+  .home__feedback {
+    h1 {
+      font-size: 30px;
+      max-width: 440px;
+    }
+  }
+}

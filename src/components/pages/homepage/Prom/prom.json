@@ -1,0 +1,26 @@
+[
+  {
+    "name": "London, UK",
+    "price": "700$",
+    "image": "/assets/home/london-bigben.png",
+    "description": "Discover the iconic Big Ben and the timeless allure of London with our unforgettable sightseeing tours. Immerse yourself in the city's rich history, vibrant culture, and stunning landmarks."
+  },
+  {
+    "name": "New York, USA",
+    "price": "1500$",
+    "image": "/assets/home/NY-empire.jpg",
+    "description": "Experience the energy of New York City and marvel at the iconic Empire State Building. Explore the city that never sleeps, from its bustling streets to its towering skyline."
+  },
+  {
+    "name": "Rome, Italy",
+    "price": "500$",
+    "image": "/assets/home/rome-colosseum.png",
+    "description": "Journey to Rome and stand in awe before the Colosseum. Immerse yourself in the heart of ancient history while exploring the captivating streets of the Eternal City."
+  },
+  {
+    "name": "Berlin, Germany",
+    "price": "400$",
+    "image": "/assets/home/berlin-cathedral.png",
+    "description": "Uncover the splendor of Berlin Cathedral. Immerse yourself in its architectural grandeur and the rich history of this cultural gem nestled in the heart of Berlin."
+  }
+]
